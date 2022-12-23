@@ -1,0 +1,12 @@
+{
+  "name": "@coreblue/eslint-config",
+  "version": "0.1.0",
+  "description": "An opinionated ESLint config for CoreBlue projects",
+  "main": "index.js",
+  "repository": "https://github.com/coreblueltd/eslint-config",
+  "license": "MIT",
+  "peerDependencies": {
+    "eslint": "^8",
+    "eslint-plugin-adonis": "^2.1.0"
+  }
+}
