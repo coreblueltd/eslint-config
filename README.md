@@ -34,3 +34,7 @@ Add `@coreblue/eslint-config` to the extends section of your `.eslintrc` configu
   ]
 }
 ```
+
+You can also extend specific configurations:
+- `@coreblue/eslint-config/adonis`
+- `@coreblue/eslint-config/react`
