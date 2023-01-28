@@ -3,6 +3,7 @@ module.exports = {
     'eslint:recommended',
     'react-app',
     'plugin:react/recommended',
+    'plugin:react-hooks/recommended',
     '@coreblue/eslint-config/common',
   ],
 

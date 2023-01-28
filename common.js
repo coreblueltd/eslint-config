@@ -1,4 +1,8 @@
 module.exports = {
+  plugins: [
+    '@typescript-eslint'
+  ],
+
   globals: {
     process: 'readonly'
   },
