@@ -21,6 +21,18 @@ module.exports = {
     'jsx-quotes': [
       'error',
       'prefer-double',
+    ],
+
+    'react/jsx-curly-spacing': [
+      'error',
+      'never',
+    ],
+
+    'react/jsx-tag-spacing': [
+      'error',
+      {
+        beforeClosing: 'never',
+      }
     ]
   }
 }

@@ -87,7 +87,55 @@ module.exports = {
       'warn',
       {
         argsIgnorePattern: '^_',
+        varsIgnorePattern: '^_',
+        caughtErrorsIgnorePattern: '^_',
       }
+    ],
+
+    'space-before-function-paren': [
+      'error',
+      'always'
+    ],
+
+    'func-call-spacing': [
+      'error',
+      'never',
+    ],
+
+    'object-curly-spacing': [
+      'error',
+      'always'
+    ],
+
+    'array-bracket-spacing': [
+      'error',
+      'never'
+    ],
+
+    'space-infix-ops': [
+      'error'
+    ],
+
+    'space-before-blocks': [
+      'error',
+      'always'
+    ],
+
+    'arrow-spacing': [
+      'error'
+    ],
+    
+    'switch-colon-spacing': [
+      'error'
+    ],
+
+    'space-in-parens': [
+      'error',
+      'never'
+    ],
+
+    'no-trailing-spaces': [
+      'error'
     ]
   },
 
@@ -101,6 +149,8 @@ module.exports = {
           'warn',
           {
             argsIgnorePattern: '^_',
+            varsIgnorePattern: '^_',
+            caughtErrorsIgnorePattern: '^_',
           }
         ],
       },
