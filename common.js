@@ -136,6 +136,10 @@ module.exports = {
 
     'no-trailing-spaces': [
       'error'
+    ],
+
+    curly: [
+      'error'
     ]
   },
 
