@@ -4,6 +4,7 @@ module.exports = {
     'react-app',
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
+    'plugin:jsx-a11y/recommended',
     '@coreblue/eslint-config/common',
   ],
 
@@ -17,6 +18,17 @@ module.exports = {
 
   rules: {
     'react/react-in-jsx-scope': 'off',
+
+    'react/jsx-max-props-per-line': [
+      'error',
+      {
+        maximum: 1,
+      }
+    ],
+
+    'multiline-ternary': ['error', 'always-multiline'],
+
+    'operator-linebreak': ['error', 'before'],
 
     'jsx-quotes': [
       'error',
