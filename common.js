@@ -140,7 +140,11 @@ module.exports = {
 
     curly: [
       'error'
-    ]
+    ],
+
+    'multiline-ternary': ['error', 'always-multiline'],
+
+    'operator-linebreak': ['error', 'before'],
   },
 
   overrides: [

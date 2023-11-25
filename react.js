@@ -26,10 +26,6 @@ module.exports = {
       }
     ],
 
-    'multiline-ternary': ['error', 'always-multiline'],
-
-    'operator-linebreak': ['error', 'before'],
-
     'jsx-quotes': [
       'error',
       'prefer-double',
