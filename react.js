@@ -22,7 +22,22 @@ module.exports = {
     'react/jsx-max-props-per-line': [
       'error',
       {
-        maximum: 1,
+        maximum: {
+          single: 2,
+          multi: 1,
+        },
+      }
+    ],
+
+    'react/jsx-first-prop-new-line': [
+      'error',
+      'multiline-multiprop'
+    ],
+
+    'react/jsx-closing-bracket-location': [
+      'error',
+      {
+        location: 'tag-aligned'
       }
     ],
 
