@@ -1,6 +1,7 @@
+const common = require('./common')
+
 module.exports = {
-  extends: [
-    'eslint:recommended',
-    '@coreblue/eslint-config/common',
-  ],
+  extends: ['eslint:recommended'],
+
+  ...common,
 }

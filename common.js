@@ -3,6 +3,12 @@ module.exports = {
     '@typescript-eslint'
   ],
 
+  parser: '@typescript-eslint/parser',
+
+  extends: [
+    'plugin:@typescript-eslint/recommended',
+  ],
+
   globals: {
     process: 'readonly'
   },

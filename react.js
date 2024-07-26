@@ -1,11 +1,12 @@
 module.exports = {
   extends: [
+    './common',
     'eslint:recommended',
-    'react-app',
+    'plugin:@typescript-eslint/recommended',
     'plugin:react/recommended',
+    'plugin:react/jsx-runtime',
     'plugin:react-hooks/recommended',
     'plugin:jsx-a11y/recommended',
-    '@coreblue/eslint-config/common',
   ],
 
   env: {

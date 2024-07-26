@@ -24,8 +24,10 @@ Next, install `@coreblue/eslint-config`:
 $ yarn install @coreblue/eslint-config --save-dev
 ```
 
+> **Note:** If you're using the deprecated eslintrc configuration format you should continue to use v1 of this package 
+
 ## Usage
-Add `@coreblue/eslint-config` to the extends section of your `.eslintrc` configuration file:
+Add `@coreblue/eslint-config` to the extends section of your `.eslintrc.cjs` configuration file:
 
 ```json
 {
@@ -36,5 +38,4 @@ Add `@coreblue/eslint-config` to the extends section of your `.eslintrc` configu
 ```
 
 You can also extend specific configurations:
-- `@coreblue/eslint-config/adonis`
 - `@coreblue/eslint-config/react`

@@ -1,17 +1,18 @@
 {
   "name": "@coreblue/eslint-config",
-  "version": "1.0.7",
+  "version": "2.0.0",
   "description": "An opinionated ESLint config for CoreBlue projects",
   "main": "index.js",
   "repository": "https://github.com/coreblueltd/eslint-config",
   "license": "MIT",
   "peerDependencies": {
-    "eslint": "^8"
+    "eslint": "^8",
+    "typescript": "^5.5.4"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^7.1.1",
+    "@typescript-eslint/eslint-plugin": "^6.7.4",
+    "@typescript-eslint/parser": "^6.7.4",
     "eslint-config-react-app": "^7.0.1",
-    "eslint-plugin-adonis": "^2.1.1",
     "eslint-plugin-jsx-a11y": "^6.8.0",
     "eslint-plugin-react": "^7.34.0",
     "eslint-plugin-react-hooks": "^4.6.0"
