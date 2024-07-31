@@ -150,7 +150,7 @@ module.exports = {
 
     'multiline-ternary': ['error', 'always-multiline'],
 
-    'operator-linebreak': ['error', 'before'],
+    'operator-linebreak': ['error', 'before', { overrides: { '&&': 'after' } }],
   },
 
   overrides: [

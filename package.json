@@ -1,6 +1,6 @@
 {
   "name": "@coreblue/eslint-config",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "An opinionated ESLint config for CoreBlue projects",
   "main": "index.js",
   "repository": "https://github.com/coreblueltd/eslint-config",
