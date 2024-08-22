@@ -57,6 +57,11 @@ module.exports = {
       {
         beforeClosing: 'never',
       }
+    ],
+
+    'react/jsx-indent': [
+      'error',
+      2,
     ]
   }
 }
