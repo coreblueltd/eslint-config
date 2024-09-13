@@ -1,6 +1,7 @@
 module.exports = {
   extends: [
     './common',
+    './tailwind',
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:react/recommended',
@@ -20,7 +21,7 @@ module.exports = {
   rules: {
     'react/react-in-jsx-scope': 'off',
 
-    'react/jsx-max-props-per-line': [
+    '@stylistic/jsx-max-props-per-line': [
       'error',
       {
         maximum: {
@@ -30,36 +31,36 @@ module.exports = {
       }
     ],
 
-    'react/jsx-first-prop-new-line': [
+    '@stylistic/jsx-first-prop-new-line': [
       'error',
       'multiline-multiprop'
     ],
 
-    'react/jsx-closing-bracket-location': [
+    '@stylistic/jsx-closing-bracket-location': [
       'error',
       {
         location: 'tag-aligned'
       }
     ],
 
-    'jsx-quotes': [
+    '@stylistic/jsx-quotes': [
       'error',
       'prefer-double',
     ],
 
-    'react/jsx-curly-spacing': [
+    '@stylistic/jsx-curly-spacing': [
       'error',
       'never',
     ],
 
-    'react/jsx-tag-spacing': [
+    '@stylistic/jsx-tag-spacing': [
       'error',
       {
         beforeClosing: 'never',
       }
     ],
 
-    'react/jsx-indent': [
+    '@stylistic/jsx-indent': [
       'error',
       2,
     ]

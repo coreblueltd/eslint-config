@@ -1,6 +1,9 @@
 module.exports = {
   plugins: [
-    '@typescript-eslint'
+    '@typescript-eslint',
+    '@stylistic',
+    'no-relative-import-paths',
+    'disable-autofix'
   ],
 
   parser: '@typescript-eslint/parser',
@@ -14,11 +17,11 @@ module.exports = {
   },
 
   rules: {
-    'key-spacing': [
+    '@stylistic/key-spacing': [
       'error'
     ],
 
-    'keyword-spacing': [
+    '@stylistic/keyword-spacing': [
       'error'
     ],
 
@@ -26,17 +29,17 @@ module.exports = {
       'warn'
     ],
 
-    'jsx-quotes': [
+    '@stylistic/jsx-quotes': [
       'error',
       'prefer-double'
     ],
 
-    'template-curly-spacing': [
+    '@stylistic/template-curly-spacing': [
       'error',
       'never'
     ],
 
-    indent: [
+    '@stylistic/indent': [
       'error',
       2,
       {
@@ -44,17 +47,17 @@ module.exports = {
       }
     ],
 
-    'linebreak-style': [
+    '@stylistic/linebreak-style': [
       'error',
       'unix'
     ],
 
-    quotes: [
+    '@stylistic/quotes': [
       'error',
       'single'
     ],
 
-    semi: [
+    '@stylistic/semi': [
       'error',
       'never'
     ],
@@ -67,12 +70,12 @@ module.exports = {
       }
     ],
 
-    'comma-dangle': [
+    '@stylistic/comma-dangle': [
       'error',
       'always-multiline'
     ],
 
-    'no-multiple-empty-lines': [
+    '@stylistic/no-multiple-empty-lines': [
       'error',
       {
         max: 2,
@@ -81,7 +84,7 @@ module.exports = {
       }
     ],
 
-    'eol-last': [
+    '@stylistic/eol-last': [
       'error'
     ],
 
@@ -98,49 +101,49 @@ module.exports = {
       }
     ],
 
-    'space-before-function-paren': [
+    '@stylistic/space-before-function-paren': [
       'error',
       'always'
     ],
 
-    'func-call-spacing': [
+    '@stylistic/func-call-spacing': [
       'error',
       'never',
     ],
 
-    'object-curly-spacing': [
+    '@stylistic/object-curly-spacing': [
       'error',
       'always'
     ],
 
-    'array-bracket-spacing': [
+    '@stylistic/array-bracket-spacing': [
       'error',
       'never'
     ],
 
-    'space-infix-ops': [
+    '@stylistic/space-infix-ops': [
       'error'
     ],
 
-    'space-before-blocks': [
+    '@stylistic/space-before-blocks': [
       'error',
       'always'
     ],
 
-    'arrow-spacing': [
+    '@stylistic/arrow-spacing': [
       'error'
     ],
     
-    'switch-colon-spacing': [
+    '@stylistic/switch-colon-spacing': [
       'error'
     ],
 
-    'space-in-parens': [
+    '@stylistic/space-in-parens': [
       'error',
       'never'
     ],
 
-    'no-trailing-spaces': [
+    '@stylistic/no-trailing-spaces': [
       'error'
     ],
 
@@ -148,9 +151,13 @@ module.exports = {
       'error'
     ],
 
-    'multiline-ternary': ['error', 'always-multiline'],
+    '@stylistic/multiline-ternary': ['error', 'always-multiline'],
 
-    'operator-linebreak': ['error', 'before', { overrides: { '&&': 'after' } }],
+    '@stylistic/operator-linebreak': ['error', 'before', { overrides: { '&&': 'after' } }],
+
+    '@stylistic/no-multiple-empty-lines': ['error', { max: 1, maxEOF: 0, maxBOF: 0 }],
+
+    'disable-autofix/no-relative-import-paths/no-relative-import-paths': ['warn', { allowSameFolder: true }],
   },
 
   overrides: [
